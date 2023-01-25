@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        h1 {
+  color: rgb(210, 6, 6);
+  text-align: center;
+} 
+h3 {
+  color: rgb(210, 6, 6);
+  text-align: center;
+} 
+
+    </style>
+   <u> <center> <h1>FLEX LAYOUT</h1></center></u>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container { 
+  display: grid; 
+  grid-template-columns:  repeat(3, 1fr);  
+  grid-template-rows: repeat(2,100px); 
+  background-color: rgb(250, 255, 255); 
+  gap: 10px; 
+  grid-template-areas: 'header header header' 
+                       'nav nav nav' 
+                       'aside content content' 
+                       'aside section section' 
+                       'footer footer footer'; 
+}
+.container > div { 
+  background-color: rgb(65, 93, 142); 
+  font-size: 40px; 
+}   
+#one { 
+  grid-area: header; 
+} 
+#two { 
+ grid-area: nav; 
+}
+#three { 
+  grid-area: aside; 
+}     
+#four { 
+  grid-area: content; 
+} 
+#five { 
+  grid-area: section; 
+}    
+#six { 
+  grid-area: footer; 
+}
+      </style>
+</head>
+<body>
+    <div class="container">
+        <div id="one">Header</div> 
+        <div id="two">Nav</div> 
+        <div id="three">Aside</div>  
+        <div id="four">Content</div>   
+        <div id="five">Section</div>  
+        <div id="six">Footer</div>
+      </div>
+     <U> <H3>ABOUT FLEX LAYOUT:</H3></U>
+    <ol>
+        <li>Before the Flexbox Layout module, there were four layout. </li>
+        <li>Block, for sections in a webpage. <br></li>
+        <li> Inline, for text. <br></li>
+        <li>Table, for two-dimensional table data. <br></li>
+        <li>Positioned, for explicit position of an element. <br></li>
+        <li>The Flexible Box Layout Module, makes it easier to design flexible responsive layout structure without using float or positioning.</li></ul>
+      
+</body>
+</html>
